@@ -1,0 +1,178 @@
+html,
+body {
+  height: 100%;
+}
+.bodyRegister {
+  background:  linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 41%,
+    rgba(0, 0, 0, 0.65) 100%
+  ),var();
+  font-family: Abel, sans-serif !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; 
+  background-image: url('https://instagram.fhty2-1.fna.fbcdn.net/v/t39.30808-6/371358708_18380457727027494_8860143702039074917_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDgxMC5zZHIifQ&_nc_ht=instagram.fhty2-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=J9KWnRH5lLYAX8Ejoyb&edm=ACWDqb8AAAAA&ccb=7-5&ig_cache_key=MzE3ODA1MjM2MjcwNjU0OTg0Nw%3D%3D.2-ccb7-5&oh=00_AfCKs_Yaw4kFLESh7amzEn-Rg4Low9nz3L0kkyIYBJOqAw&oe=6566F5FC&_nc_sid=ee9879');
+}
+
+.login-boxx {
+  margin: 40px;
+  height: 95%;
+  min-width: 350px; 
+  width: 70% !important;
+  background: #2b2d42b6;
+  text-align: center;  
+  border-radius: 30px;
+}
+
+.login-title {
+  margin-top: 30px ;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #EDF2F4;
+}
+
+.login-form {
+  text-align: center;
+  justify-content: center;
+  margin: auto; 
+  width: 70%;  
+}
+
+input[type=text] {
+  background-color: #2b2d42c9;
+  border: none;
+  border-bottom: 2px solid #d80032;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size:20px;
+  text-align: center;
+  outline: 0;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  color: #EDF2F4;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #2B2D42 inset !important;
+}
+
+input:-webkit-autofill{
+  -webkit-text-fill-color:  #EDF2F4 !important;
+  font-weight: bold !important;
+  font-size: 20px  !important;
+}
+input[type=password] {
+  background-color: #2b2d42c9;
+  border: none;
+  border-bottom: 2px solid #d80032;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  text-align: center;
+  outline: 0;
+  font-size:20px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  color: #EDF2F4;
+}
+
+.form-group {
+  margin-bottom: 40px;
+  outline: 0px;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid #d80032;
+  outline: 0;
+  background-color: #2B2D42;
+  color: #EDF2F4;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+.form-control-label {
+  font-size: 15px;
+  color: #8D99AE;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn-outline-primary {
+  border-color: #d80032;
+  color: #ffffff;
+  border-radius: 0px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 3px rgb(43, 45, 66), 0 1px 2px rgb(43, 45, 66);
+}
+
+.btn-outline-primary:hover {
+  background-color: #EF233C;
+  right: 0px;
+}
+
+.login-btn {
+  padding: 0px;
+  margin-bottom: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+.login-text {
+  text-align: left;
+  padding-left: 0px;
+  color: #8D99AE;
+}
+
+.form-register{
+    padding: 0 15% 0 15%;
+}
+
+.form-register .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-register .form-control:focus {
+  z-index: 2;
+}
+.form-register input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-register input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.help-block{
+  color:#D80032;
+}
