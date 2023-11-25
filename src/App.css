@@ -1,0 +1,18 @@
+body {
+    margin: 0px !important;
+  }
+  
+  :root {
+    --navbar: #002962;
+    --navbar-text: red;
+    --navbar-text-hover: #ffed66;
+    --navbar-logo: url('./vite.svg');
+    --user-logo: url('./assets/User.ico');
+    --footer-text: red;
+    --copyRight-Color: grey;
+    --midBar-bg-color: pink;
+    --card-header-color: grey;
+    --card-header-text-color: black;
+    --card-body-color: yellow;
+    --card-body-text-color: black;
+  }
