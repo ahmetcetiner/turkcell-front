@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Car.css";
 
 const Car = () => {
   const cars = [
@@ -8,32 +9,34 @@ const Car = () => {
   ];
 
   return (
-    <table className="table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Marka</th>
-          <th>Model</th>
-          <th>Yıl</th>
-          <th>İşlemler</th>
-        </tr>
-      </thead>
-      <tbody>
-        {cars.map((car) => (
-          <tr key={car.id}>
-            <td>{car.id}</td>
-            <td>{car.brand}</td>
-            <td>{car.model}</td>
-            <td>{car.year}</td>
-            <td>
-                <button className='btnEkle'>Ekle</button>
-                <button className='btnSil'>Sil</button>
-            </td>
-
+    <div className='container mt-5'>
+      <table className="table table-dark table-borderless border border-1 rounded">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Marka</th>
+            <th>Model</th>
+            <th>Yıl</th>
+            <th className='colBtn'><button className='text-center btnAdd'></button></th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {cars.map((car) => (
+            <tr className='' key={car.id}>
+              <td className='col-md-2'>{car.id}</td>
+              <td className='col-md-2'>{car.brand}</td>
+              <td className='col-md-2'>{car.model}</td>
+              <td className='col-md-2'>{car.year}</td>
+              <td className='col-md-2 colBtn'>
+                <button className='btnUpdate'></button>
+                <button className='btnDel'></button>
+              </td>
+
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };
 

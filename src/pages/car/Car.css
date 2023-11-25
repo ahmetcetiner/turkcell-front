@@ -1,0 +1,40 @@
+.colBtn{
+    width: 10% !important;
+    text-align: center;
+}
+
+.btnAdd{
+    border: 0px;
+    background: none;
+    background-image: url("../../assets/Plus_Math.ico");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.btnDel{
+    border: 0px;
+    background: none;
+    background-image: url("../../assets/Trash_Can.ico");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.btnUpdate{
+    border: 0px;
+    background: none;
+    background-image: url("../../assets/Update.ico");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+}
