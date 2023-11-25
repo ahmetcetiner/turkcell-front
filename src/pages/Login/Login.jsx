@@ -1,32 +1,61 @@
 import React from 'react'
-
+import "./Login.css"
 const Login = () => {
   return (
-
-<form>
-  <fieldset disabled>
-    <legend>Disabled fieldset example</legend>
-    <div class="mb-3">
-      <label for="disabledTextInput" class="form-label">Disabled input</label>
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" />
-    </div>
-    <div class="mb-3">
-      <label for="disabledSelect" class="form-label">Disabled select menu</label>
-      <select id="disabledSelect" class="form-select">
-        <option>Disabled select</option>
-      </select>
-    </div>
-    <div class="mb-3">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled /> 
-        <label class="form-check-label" for="disabledFieldsetCheck">
-          Can't check this
-        </label>
+    <div className='bodyLogin'>
+      <div class="container rounded">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 col-md-8 login-boxx">
+            <div class="col-lg-12 login-title">
+              <h1>Sign In</h1>
+            </div>
+            <div class="col-lg-12 login-form"></div>
+            <form className='formLogin'>
+              <div class="form-group">
+                <label class="form-control-label">EMAIL</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="Email"
+                  placeholder="Email"
+                  name="Email"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">PASSWORD</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="Pasword"
+                  placeholder="Pasword"
+                  name="Pasword"
+                />
+              </div>
+              <div class="loginbttm">
+                <div class="col-lg-6 login-btm login-text">
+                </div>
+                <div
+                  class="col-lg-7 login-btm login-button justify-content-center"
+                >
+                  <button type="submit" class="btn btn-outline-primary" >
+                    LOGIN
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="loginbttm">
+            <div class="col-lg-3 col-md-2 m-3">
+              <a class="form-control-label">SIGN UP</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </fieldset>
-</form>  )
+    </div >
+
+  )
 }
 
 export default Login
