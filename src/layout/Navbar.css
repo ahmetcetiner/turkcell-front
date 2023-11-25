@@ -1,0 +1,55 @@
+.nav-bar {
+  background-color: var(--navbar) !important;
+}
+
+.nav-link {
+  color: var(--navbar-text) !important;
+}
+
+.nav-link:hover {
+  color: var(--navbar-text-hover) !important;
+}
+
+.navbar-toggler {
+  color: var(--navbar-text);
+  background-color: var(--navbar-text);
+  border: 0px;
+}
+
+.userImg{
+  width: 48px;
+  content: var(--user-logo);
+  background-repeat: no-repeat;
+}
+
+.logoImg {
+  min-width: 5rem;
+  content: var(--navbar-logo);
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+
+.justify-content-md-center {
+  width: 100%;
+}
+
+@media screen and (min-width: 770px) {
+  .page {
+    display: block !important;
+  }
+
+  .wrap {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .page {
+    display: none !important;
+  }
+
+  .wrap {
+    display: block !important;
+  }
+}
