@@ -2,25 +2,25 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 
-const AddCar = () => {
+function AddCar() {
 
   let navigate = useNavigate()
 
-  const [user, setUser] = useState({
-    name: "",
-    username: "",
-    email: "",
+  const [car, setCar] = useState({
+    brand:"",
+    model:"",
+    year:""
   });
 
-  const { name, username, email } = user;
+  const { brand, model, year } = car;
 
   const onInputChange =(e)=>{
-      setUser({...user,[e.target.name]:e.target.value})
+      setCar({...car,[e.target.brand]:e.target.value})
   }
 
   const onSubmit =async(e)=>{
     e.preventDefault();
-   await axios.post("http://localhost:8080/user",user) 
+   await axios.post("http://localhost:8080/api/v1/cars",car) 
    navigate("/")
   }
 
@@ -28,45 +28,45 @@ const AddCar = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-          <h2 className="text-center m-4 ">Kullanıcı Ekle</h2>
+          <h2 className="text-center m-4 ">Araba Ekle</h2>
           <form onSubmit={(e)=>onSubmit(e)}>
           <div className="mb-3">
-            <label htmlFor="Name" className="form-label">
-              Adınız
+            <label htmlFor="Brand" className="form-label">
+              Marka
             </label>
             <input
               type={"text"}
-              name="name"
+              name="brand"
               className="form-control"
-              placeholder="Adınızı Giriniz"
-              value={name}
+              placeholder="Marka Giriniz"
+              value={brand}
               onChange={(e)=>onInputChange(e)}
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="Username" className="form-label">
-              Kullanıc Adınız
+            <label htmlFor="Model" className="form-label">
+              Model 
             </label>
             <input
               type={"text"}
-              name="username"
+              name="model"
               className="form-control"
-              placeholder="Kullanıcı Adınızı Giriniz"
-              value={username}
+              placeholder="Model Giriniz"
+              value={model}
               onChange={(e)=>onInputChange(e)}
 
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="email" className="form-label">
-              Email{" "}
+            <label htmlFor="year" className="form-label">
+              Yıl{" "}
             </label>
             <input
               type={"text"}
-              name="email"
+              name="year"
               className="form-control"
-              placeholder="Email Adresinizi Giriniz"
-              value={email}
+              placeholder="Yılı Giriniz"
+              value={year}
               onChange={(e)=>onInputChange(e)}
             />
           </div>
