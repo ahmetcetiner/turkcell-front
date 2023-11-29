@@ -58,7 +58,7 @@ const loadCars = async () => {
 };
 
 const deleteCar = async (id)=>{
-  await axios.delete(`http://localhost:8080/api/v1/cars/${id}`)
+  await axios.delete(`http://localhost:8082/api/v1/cars/${id}`)
   loadCars()
 }
 
